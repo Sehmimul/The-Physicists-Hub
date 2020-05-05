@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+</head>
+<body>
+	<form action="signup.php" method="POST">
+	<p>
+		<label>Name: </label>
+		<input type="text" name="your" id="your">
+		<div class="red-text"><?php echo $errors['your']; ?></div>
+	</p>
+	<p>
+		<label>email: </label>
+		<input type="text" name="email" id="email">
+	</p>
+	<p>
+		<label>Username: </label>
+		<input type="text" name="username" id="username">
+	</p>
+	<p>
+		<label>Password: </label>
+		<input type="password" name="password" id="password">
+	</p>
+	<p>
+		<input type="submit" name="submit" value="submit">
+	</p>
+	</form>
+</body>
+</html>

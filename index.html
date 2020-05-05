@@ -1,0 +1,279 @@
+<?php 
+
+session_start();
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Physicists' Hub</title>
+	<script src="https://kit.fontawesome.com/9c0df80a88.js" crossorigin="anonymous"></script>
+
+	 <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+     <script>
+
+     	$(document).ready(function(){
+     		$('.parallax').parallax();
+     	});
+     	
+     	
+     </script>
+
+     <style>
+     	div > img {
+     		
+     		height: 80%;
+     		width: 70%;
+     	}
+
+     	.parallax-container{
+height:200px;
+}
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<section>
+	<nav class="nav-wrapper blue-grey darken-1">
+
+	<div class="container">
+
+ 			<div class="row blue-grey darken-1">
+ 				<div class="col s12 m6 l6">
+ 					<ul class="left">
+
+ 						<li><a href="index.html" class="grey-text text-lighten-3"><h5>The Physicists' Hub</h5></a></li>
+ 						
+ 					</ul>
+ 				</div>
+ 				<div class="col s12 m6 l6m">
+ 					<ul class="right">
+
+ 						<li><a href="index.html"><i class="large material-icons white-text ">home</i></a></li>
+ 						<li><a href="ideas/myindex.php"><i class="large material-icons white-text ">wb_sunny</i></a></li>
+ 						<li><a href="topics/topics.php"><i class="large material-icons white-text ">note</i></a></li>
+
+                        <?php if ($_SESSION != NULL) { ?>
+                        
+                        <li><a href="signout.php"><i class="large material-icons white-text ">exit_to_app</i></a></li>
+                <?php } ?>
+
+                        <?php if ($_SESSION == NULL) { ?>
+
+                        <li><a href="signup.php">Sign Up</a></li> 
+                        <!-- <li><a href="../login.html"><i class="large material-icons grey-text ">exit_to_app</i></a></li> -->
+                        <li><a href="login.html">Log in</a></li>
+                        <?php } ?>
+ 					</ul>
+ 				</div>
+ 				</div>
+ 		</div> 
+
+ 		</nav>
+
+
+ 		<div class="container">
+ 			<div class="row"></div>
+ 			<div class="row">
+ 				<div class="col s12 m3 l3"></div>
+ 				<div class="col s12 m6 l6 center">
+ 					<img src="images/icon.png" class="icon">				
+ 				</div>
+ 				
+ 			</div>
+
+
+ 			<div class="row"></div>
+ 			<div class="row"></div>
+ 			<div class="row">
+ 				<div class="col s12 m3 l3">
+ 					<h4 class="grey-text">About</h4>
+ 					
+ 				</div>
+
+ 				<div class=" col s12 m9 l9">
+
+ 					<div>Transpilation and polyfilling are two highly effective techniques for addressing that gap between code that uses the latest stable features in the language and the old environments a site or application needs to still support. Since JS isn't going to stop improving, the gap will never go away. Both techniques should be embraced as a standard part of every JS project's production chain going forward.</div>
+
+ 					
+ 				</div>
+ 				
+ 			</div>
+
+
+
+
+ 			<div class="row"></div>
+ 			<div class="row"></div>
+ 			<div class="row">
+ 				<div class="col s12 m3 l3">
+ 					<h4 class="grey-text">Our Aim</h4>
+ 					
+ 				</div>
+
+ 				<div class=" col s12 m9 l9">
+
+ 					<div>Transpilation and polyfilling are two highly effective techniques for addressing that gap between code that uses the latest stable features in the language and the old environments a site or application needs to still support. Since JS isn't going to stop improving, the gap will never go away. Both techniques should be embraced as a standard part of every JS project's production chain going forward.</div>
+
+ 					
+ 				</div>
+ 				
+ 			</div>
+
+ 		</section>
+
+
+
+ 			<div class="parallax-container">
+ 				<div class="parallax">
+ 					<img src="images/space.png" alt = "" class="responsive-img">
+ 					
+ 				</div>
+ 				
+ 			</div>
+
+ 			<div class="container">
+
+ 			<div class="row"></div>
+ 			<div class="row"></div>
+ 			<div class="row">
+ 				<div class="col s12 m3 l3">
+ 					<img src="images/semi.png" class="circle">
+ 					
+ 				</div>
+
+ 				<div class=" col s12 m9 l9">
+
+ 					<div>Transpilation and polyfilling are two highly effective techniques for addressing that gap between code that uses the latest stable features in the language and the old environments a site or application needs to still support. Since JS isn't going to stop improving, the gap will never go away. Both techniques should be embraced as a standard part of every JS project's production chain going forward.</div>
+
+ 					
+ 				</div>
+
+
+
+
+
+
+ 				<div class="row"></div>
+ 			<div class="row"></div>
+ 			<div class="row">
+ 				<div class="col s12 m3 l3">
+ 					<img src="images/Lakshay.png" class="circle">
+ 					
+ 				</div>
+
+ 				<div class=" col s12 m9 l9">
+
+ 					<div>Transpilation and polyfilling are two highly effective techniques for addressing that gap between code that uses the latest stable features in the language and the old environments a site or application needs to still support. Since JS isn't going to stop improving, the gap will never go away. Both techniques should be embraced as a standard part of every JS project's production chain going forward.</div>
+
+ 					
+ 				</div>
+ 				
+ 			</div>
+ 		</div>
+ 	</div>
+
+
+ 	<div class="page-footer grey darken-1">
+ 		<div class="container">
+ 		<div>Thank you for visiting the Physicists' Hub!
+ 		For any complaints, suggestions or tips for improvement please contact us!
+ 		We are a new startup and would love to hear any feedback</div>
+ 		
+ 		<div class="row"></div>
+ 		<div class="row">
+ 			<div class="col s12 m2 l2 center"></div>
+ 			<div class="col s12 m2 l2 center"></div>
+ 			<div class="col s12 m2 l2 center"></div>
+ 			<div class="col s12 m2 l2 center"></div>
+ 			<div class="col s12 m2 l2 center"></div>
+ 			<!-- <div class="col s12 m1 l1 center"></div> -->
+
+ 			<div class="col s12 m2 l2 center">
+
+ 				<div class="row">
+
+
+ 					<div class="col s12 m6 l6 center">
+ 				<a href="mailto: sehmimul777@gmail.com">
+				<i id="mail" class="fas fa-envelope fa-2x" style="color:#989898";></i>
+			</a>
+ 			</div>
+
+ 			<div class="col s12 m6 l6 center">
+
+ 			<a href="https://www.facebook.com/sehmimul.hoque.1">
+				<i id="fb" class="fab fa-facebook-square fa-2x" style="color:#989898";></i>
+			</a>
+ 	</div>
+ 					
+
+
+ 				</div>
+ 				
+
+
+ 			</div>
+ 		</div>
+
+ 			<!-- <div class="col s12 m2 l2 right">
+ 				<a href="mailto: sehmimul777@gmail.com">
+				<i id="mail" class="fas fa-envelope fa-2x" style="color:#989898";></i>
+			</a>
+ 			</div>
+
+ 			<div class="col s12 m2 l2 center">
+
+ 			<a href="https://www.facebook.com/sehmimul.hoque.1">
+				<i id="fb" class="fab fa-facebook-square fa-2x" style="color:#989898";></i>
+			</a>
+ 	</div> -->
+
+
+
+ 		
+
+ 	</div>
+
+ 	<div class="footer-copyright center black">
+ 		<div class="container center white-text">&copy; The Physicists' Hub</div>
+ 		
+
+ 	</div>
+ </div>
+</div>
+</section>
+
+
+
+ 	
+
+
+
+
+
+
+ 		
+
+		
+
+	
+
+</body>
+</html>
